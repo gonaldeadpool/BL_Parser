@@ -1,0 +1,14 @@
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Maven
+target/
+
+# Log
+logs/
+*.log
