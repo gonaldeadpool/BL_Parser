@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><LegoItems>
+  <LegoItem>
+    <id>22886</id>
+    <idLegoAlternativo/>
+    <name>Brick 1 x 2 x 3</name>
+    <id_color>11</id_color>
+    <color>Black</color>
+    <qty>1</qty>
+    <bestSeller/>
+    <bestPrice/>
+    <sellers>
+      <seller name="tspio">0,25</seller>
+    </sellers>
+  </LegoItem>
+  <LegoItem>
+    <id>3001</id>
+    <idLegoAlternativo/>
+    <name>Brick 2 x 4</name>
+    <id_color>11</id_color>
+    <color>Black</color>
+    <qty>1</qty>
+    <bestSeller/>
+    <bestPrice/>
+    <sellers>
+      <seller name="tspio">0,12</seller>
+      <seller name="andeekey">0,12</seller>
+    </sellers>
+  </LegoItem>
+  <LegoItem>
+    <id>32803</id>
+    <idLegoAlternativo/>
+    <name>Slope, Curved, Inverted 2 x 2 x 2/3</name>
+    <id_color>11</id_color>
+    <color>Black</color>
+    <qty>1</qty>
+    <bestSeller/>
+    <bestPrice/>
+    <sellers>
+      <seller name="andeekey">0,09</seller>
+    </sellers>
+  </LegoItem>
+</LegoItems>

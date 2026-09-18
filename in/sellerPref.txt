@@ -1,0 +1,11 @@
+#!utente;store;spese di spedizione;spesa minima
+#brickina;brickina - up to 75%OFF;0;0
+#BunteSteinewelt;Bunte Steinewelt;0;0
+#vp.hp;Hodgepodge Bricks;0;0
+#nice_stock;brickmania czech;0;0
+#mbod;VERONA BRICK;0;0
+#PaoloBitta;BRICK & brick;0;0
+#GetStones24;GetStones24;0;0
+#fobya71;LTI_Brickers;0;0
+tspio;Grizzlies' Bricks;0;0
+andeekey;Andeekey;0;0
