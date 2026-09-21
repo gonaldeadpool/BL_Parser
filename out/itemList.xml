@@ -1,42 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?><LegoItems>
   <LegoItem>
-    <id>22886</id>
+    <id>6190</id>
     <idLegoAlternativo/>
-    <name>Brick 1 x 2 x 3</name>
+    <name>Bar 1 x 3 with 2 Stud Receptacles (Radio Handle / Telephone Handset)</name>
     <id_color>11</id_color>
     <color>Black</color>
     <qty>1</qty>
     <bestSeller/>
     <bestPrice/>
-    <sellers>
-      <seller name="tspio">0,25</seller>
-    </sellers>
+    <sellers/>
   </LegoItem>
   <LegoItem>
-    <id>3001</id>
+    <id>32828</id>
     <idLegoAlternativo/>
-    <name>Brick 2 x 4</name>
+    <name>Bar 1L with 1 x 1 Round Plate with Hollow Stud</name>
     <id_color>11</id_color>
     <color>Black</color>
     <qty>1</qty>
     <bestSeller/>
     <bestPrice/>
-    <sellers>
-      <seller name="tspio">0,12</seller>
-      <seller name="andeekey">0,12</seller>
-    </sellers>
+    <sellers/>
   </LegoItem>
   <LegoItem>
-    <id>32803</id>
+    <id>48729b</id>
     <idLegoAlternativo/>
-    <name>Slope, Curved, Inverted 2 x 2 x 2/3</name>
+    <name>Bar 1L with Clip Mechanical Claw - Cut Edges and Hole on Side</name>
     <id_color>11</id_color>
     <color>Black</color>
     <qty>1</qty>
     <bestSeller/>
     <bestPrice/>
-    <sellers>
-      <seller name="andeekey">0,09</seller>
-    </sellers>
+    <sellers/>
+  </LegoItem>
+  <LegoItem>
+    <id>30374</id>
+    <idLegoAlternativo/>
+    <name>Bar 4L (Lightsaber Blade / Wand)</name>
+    <id_color>11</id_color>
+    <color>Black</color>
+    <qty>1</qty>
+    <bestSeller/>
+    <bestPrice/>
+    <sellers/>
+  </LegoItem>
+  <LegoItem>
+    <id>63965</id>
+    <idLegoAlternativo/>
+    <name>Bar 6L with Stop Ring</name>
+    <id_color>11</id_color>
+    <color>Black</color>
+    <qty>1</qty>
+    <bestSeller/>
+    <bestPrice/>
+    <sellers/>
+  </LegoItem>
+  <LegoItem>
+    <id>23443</id>
+    <idLegoAlternativo/>
+    <name>Bar Holder with Handle</name>
+    <id_color>11</id_color>
+    <color>Black</color>
+    <qty>1</qty>
+    <bestSeller/>
+    <bestPrice/>
+    <sellers/>
+  </LegoItem>
+  <LegoItem>
+    <id>73825</id>
+    <idLegoAlternativo/>
+    <name>Bracket 1 x 1 - 1 x 2 Inverted</name>
+    <id_color>11</id_color>
+    <color>Black</color>
+    <qty>1</qty>
+    <bestSeller/>
+    <bestPrice/>
+    <sellers/>
+  </LegoItem>
+  <LegoItem>
+    <id>99780</id>
+    <idLegoAlternativo/>
+    <name>Bracket 1 x 2 - 1 x 2 Inverted</name>
+    <id_color>11</id_color>
+    <color>Black</color>
+    <qty>1</qty>
+    <bestSeller/>
+    <bestPrice/>
+    <sellers/>
   </LegoItem>
 </LegoItems>

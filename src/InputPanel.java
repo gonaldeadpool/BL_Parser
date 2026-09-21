@@ -14,15 +14,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.File;
-import java.util.ArrayList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import BL.Parser;
-import BL.ColorItemClass;
 import BL.CsvEditorFrame;
-import BL.WantedListParser;
-import BL.LegoItem;
 import Utility.InputDefaultLoader;
 import Utility.ParserPath;
 
@@ -52,7 +48,7 @@ public class InputPanel extends JPanel {
 	 private JLabel lblNewLabel_5;
 	 private JComboBox<ComboItem> combo_maxseller;
 	 
-	 private String comboBox_seller_value ="PREF";
+	 private String comboBox_seller_value ="ONLYDESC";
 	 private String comboBox_where_value = "ALL";
 	 private String comboBox_type_value = "ALL";
 	 private String comboBox_maxseller_value = "10";
@@ -123,6 +119,7 @@ public class InputPanel extends JPanel {
 		add(lbl_comboseller, "flowx,cell 1 11,alignx left");
 		
 		comboBox_seller = new JComboBox<ComboItem>();
+		comboBox_seller.addItem(new ComboItem("Solo descrizione", "ONLYDESC"));
 		comboBox_seller.addItem(new ComboItem("Solo tra i sellers preferiti", "PREF"));
 		comboBox_seller.addItem(new ComboItem("Sellers con prezzo migliore", "BEST"));
 		comboBox_seller.addItem(new ComboItem("Sellers migliori con precedenza ai preferiti", "BESTPREF"));

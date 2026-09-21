@@ -37,7 +37,6 @@ public class Parser {
 	private boolean usePref;
 	
 	private String xmlInput;
-	private String XmlPathPref;
 	private String csvOutputPath;
 	private String typeSearch;
 	private boolean searchToLegoSite;
@@ -67,7 +66,8 @@ public class Parser {
 		setFilter(nRighe,location,minQty,condizione, minPrice, maxPrice);
 		
 		run();
-		PriceAnalyzer();
+		if(!this.typeSearch.equals("ONLYDESC"))
+			PriceAnalyzer();
 		
 		csvCreate();
 		
@@ -105,6 +105,11 @@ public class Parser {
 		this.maxPrice = (maxPrice!=null)?"%22max%22:%22"+maxPrice+"%22,":""; // es 0.19
 		
         switch (typeSearch) {
+
+		case "ONLYDESC":
+        	this.usePref = false;
+        	break;
+
         case "BEST":
         	this.usePref = false;
             break;
@@ -215,6 +220,11 @@ public class Parser {
 	            LegoItem result = null;
 	            try {
 	                switch (typeSearch) {
+
+						case "ONLYDESC":
+							result = loadOnlyDescFromSalePage(itm, threadDriver);
+							break;
+
 	                    case "BEST":
 
 	                        result = loadDataFromSalePage(itm, threadDriver);
@@ -458,6 +468,31 @@ public class Parser {
 	    return itm;
 	}
 
+
+		 private LegoItem loadOnlyDescFromSalePage(LegoItem itm,WebDriver threadDriver){
+		 
+		 	Map<String, String> sellerList; 
+		 		
+		 		// se no è stata impostata una quantità minima uso il valore della wanted list
+		 		minQty=(minQty.equals("0"))?"%22minqty%22:%22"+itm.qty+"%22,":"%22minqty%22:%22"+minQty+"%22,";
+		 		
+		 		String url = "https://www.bricklink.com/v2/catalog/catalogitem.page?P="+itm.id+"&C="+itm.id_color+"#T=S&C="+itm.id_color+"&O={%22color%22:%22"+itm.id_color+"%22,"+condizione+minPrice+maxPrice+minQty+location+"%22rpp%22:%22"+nRighe+"%22,%22iconly%22:0}";
+
+	        	System.out.println(url);
+
+	        	try {
+	        		threadDriver.get(url);
+	
+		         // Estrai il nome dell'oggetto
+		            WebElement itemNameElement = threadDriver.findElement(By.id("item-name-title"));
+		            itm.name = itemNameElement.getText();
+				}
+				catch (Exception e) {
+
+	        		logger.error("ERRORE",e);
+	        	}
+	            return itm;
+		}
 	
 	 private LegoItem loadDataFromSalePage(LegoItem itm,WebDriver threadDriver){
 		 
